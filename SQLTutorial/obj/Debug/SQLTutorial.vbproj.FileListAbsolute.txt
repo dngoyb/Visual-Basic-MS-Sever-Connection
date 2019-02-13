@@ -1,0 +1,13 @@
+C:\Users\ngoyb\Documents\visual Basic\SQLTutorial\SQLTutorial\bin\Debug\SQLTutorial.exe.config
+C:\Users\ngoyb\Documents\visual Basic\SQLTutorial\SQLTutorial\bin\Debug\SQLTutorial.exe
+C:\Users\ngoyb\Documents\visual Basic\SQLTutorial\SQLTutorial\bin\Debug\SQLTutorial.pdb
+C:\Users\ngoyb\Documents\visual Basic\SQLTutorial\SQLTutorial\bin\Debug\SQLTutorial.xml
+C:\Users\ngoyb\Documents\visual Basic\SQLTutorial\SQLTutorial\obj\Debug\SQLTutorial.vbprojAssemblyReference.cache
+C:\Users\ngoyb\Documents\visual Basic\SQLTutorial\SQLTutorial\obj\Debug\SQLTutorial.Form1.resources
+C:\Users\ngoyb\Documents\visual Basic\SQLTutorial\SQLTutorial\obj\Debug\SQLTutorial.Inventory.resources
+C:\Users\ngoyb\Documents\visual Basic\SQLTutorial\SQLTutorial\obj\Debug\SQLTutorial.Resources.resources
+C:\Users\ngoyb\Documents\visual Basic\SQLTutorial\SQLTutorial\obj\Debug\SQLTutorial.vbproj.GenerateResource.cache
+C:\Users\ngoyb\Documents\visual Basic\SQLTutorial\SQLTutorial\obj\Debug\SQLTutorial.vbproj.CoreCompileInputs.cache
+C:\Users\ngoyb\Documents\visual Basic\SQLTutorial\SQLTutorial\obj\Debug\SQLTutorial.exe
+C:\Users\ngoyb\Documents\visual Basic\SQLTutorial\SQLTutorial\obj\Debug\SQLTutorial.xml
+C:\Users\ngoyb\Documents\visual Basic\SQLTutorial\SQLTutorial\obj\Debug\SQLTutorial.pdb
