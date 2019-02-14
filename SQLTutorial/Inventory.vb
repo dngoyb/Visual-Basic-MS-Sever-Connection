@@ -30,4 +30,8 @@ Public Class Inventory
      Private Sub cmdSearch_Click(sender As Object, e As EventArgs) Handles cmdSearch.Click
         FindItem()
     End Sub
+
+    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles txtSearch.TextChanged
+
+    End Sub
 End Class

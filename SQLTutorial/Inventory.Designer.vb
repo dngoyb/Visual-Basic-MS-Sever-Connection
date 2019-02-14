@@ -23,7 +23,7 @@ Partial Class Inventory
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.cmdSearch = New System.Windows.Forms.Button()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txtSearch = New System.Windows.Forms.TextBox()
         Me.dgvData = New System.Windows.Forms.DataGridView()
         Me.cbxItem = New System.Windows.Forms.ComboBox()
         CType(Me.dgvData, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -38,12 +38,12 @@ Partial Class Inventory
         Me.cmdSearch.Text = "Search"
         Me.cmdSearch.UseVisualStyleBackColor = True
         '
-        'TextBox1
+        'txtSearch
         '
-        Me.TextBox1.Location = New System.Drawing.Point(12, 31)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(185, 22)
-        Me.TextBox1.TabIndex = 1
+        Me.txtSearch.Location = New System.Drawing.Point(12, 31)
+        Me.txtSearch.Name = "txtSearch"
+        Me.txtSearch.Size = New System.Drawing.Size(185, 22)
+        Me.txtSearch.TabIndex = 1
         '
         'dgvData
         '
@@ -76,7 +76,7 @@ Partial Class Inventory
         Me.ClientSize = New System.Drawing.Size(833, 370)
         Me.Controls.Add(Me.cbxItem)
         Me.Controls.Add(Me.dgvData)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.txtSearch)
         Me.Controls.Add(Me.cmdSearch)
         Me.Name = "Inventory"
         Me.Text = "Inventory"
@@ -87,7 +87,7 @@ Partial Class Inventory
     End Sub
 
     Friend WithEvents cmdSearch As Button
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents txtSearch As TextBox
     Friend WithEvents dgvData As DataGridView
     Friend WithEvents cbxItem As ComboBox
 End Class
