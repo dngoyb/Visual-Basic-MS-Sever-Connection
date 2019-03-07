@@ -14,10 +14,15 @@
         SQL.AddParam("@active", cbActive.Checked)
         SQL.AddParam("@admin", cbAdmin.Checked)
 
-        SQL.ExecuteQuery("INSERT INTO members (username, password, active, admin, joindate) VALUES (@user, @pass, @active, @admin, GETDATE());")
+        SQL.ExecuteQuery("INSERT INTO members (username, password, active, admin, joindate) VALUES (@user, @pass, @active, @admin, GETDATE());", True)
 
         'Report and Abort on error
         If SQL.HasException(True) Then Exit Sub
+
+        If SQL.DBDT.Rows.Count > 0 Then
+            Dim row As DataRow = SQL.DBDT.Rows(0)
+            MsgBox(row("LastID").ToString)
+        End If
 
         MsgBox("User Created Successfully")
     End Sub

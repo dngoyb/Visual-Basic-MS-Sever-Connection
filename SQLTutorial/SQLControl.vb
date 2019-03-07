@@ -25,7 +25,7 @@ Public Class SQLControl
     End Sub
 
     'Execute Query SUb
-    Public Sub ExecuteQuery(Query As String)
+    Public Sub ExecuteQuery(Query As String, Optional ReturnedIdentity As Boolean = False)
         'Reset Query Stats
         RecordCount = 0
         Exception = ""
@@ -46,6 +46,14 @@ Public Class SQLControl
             DBDT = New DataTable
             DBDA = New SqlDataAdapter(DBCmd)
             RecordCount = DBDA.Fill(DBDT)
+
+            If ReturnedIdentity = True Then
+                Dim ReturnedQuery As String = "SELECT @@IDENTITY As LastID;"
+                DBCmd = New SqlCommand(ReturnedQuery, DBCon)
+                DBDT = New DataTable
+                DBDA = New SqlDataAdapter(DBCmd)
+                RecordCount = DBDA.Fill(DBDT)
+            End If
         Catch ex As Exception
 
             'Captchure Error
