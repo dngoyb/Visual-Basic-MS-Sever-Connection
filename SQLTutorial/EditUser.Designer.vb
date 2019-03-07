@@ -49,9 +49,9 @@ Partial Class EditUser
         '
         Me.lbUsers.FormattingEnabled = True
         Me.lbUsers.ItemHeight = 16
-        Me.lbUsers.Location = New System.Drawing.Point(13, 58)
+        Me.lbUsers.Location = New System.Drawing.Point(13, 68)
         Me.lbUsers.Name = "lbUsers"
-        Me.lbUsers.Size = New System.Drawing.Size(196, 260)
+        Me.lbUsers.Size = New System.Drawing.Size(196, 228)
         Me.lbUsers.TabIndex = 1
         '
         'CheckedListBox1
@@ -75,7 +75,7 @@ Partial Class EditUser
         Me.GroupBox1.Controls.Add(Me.txtID)
         Me.GroupBox1.Location = New System.Drawing.Point(228, 29)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(387, 289)
+        Me.GroupBox1.Size = New System.Drawing.Size(387, 267)
         Me.GroupBox1.TabIndex = 3
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Member Details"
@@ -156,14 +156,14 @@ Partial Class EditUser
         Me.cmdSubmit.Name = "cmdSubmit"
         Me.cmdSubmit.Size = New System.Drawing.Size(75, 23)
         Me.cmdSubmit.TabIndex = 8
-        Me.cmdSubmit.Text = "Button1A"
+        Me.cmdSubmit.Text = "Submit"
         Me.cmdSubmit.UseVisualStyleBackColor = True
         '
         'EditUser
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(627, 327)
+        Me.ClientSize = New System.Drawing.Size(626, 308)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.CheckedListBox1)
         Me.Controls.Add(Me.lbUsers)

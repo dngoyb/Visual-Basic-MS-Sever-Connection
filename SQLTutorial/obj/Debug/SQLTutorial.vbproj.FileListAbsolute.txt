@@ -26,3 +26,4 @@ C:\Users\ngoyb\Desktop\Visual-Basic-MS-Sever-Connection\SQLTutorial\obj\Debug\SQ
 C:\Users\ngoyb\Desktop\Visual-Basic-MS-Sever-Connection\SQLTutorial\obj\Debug\SQLTutorial.exe
 C:\Users\ngoyb\Desktop\Visual-Basic-MS-Sever-Connection\SQLTutorial\obj\Debug\SQLTutorial.xml
 C:\Users\ngoyb\Desktop\Visual-Basic-MS-Sever-Connection\SQLTutorial\obj\Debug\SQLTutorial.pdb
+C:\Users\ngoyb\Desktop\Visual-Basic-MS-Sever-Connection\SQLTutorial\obj\Debug\SQLTutorial.EditUser.resources
