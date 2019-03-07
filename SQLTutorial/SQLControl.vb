@@ -2,7 +2,7 @@
 
 'Going to handle db connection and data set
 Public Class SQLControl
-    Private DBCon As New SqlConnection("Server =NotTrue; Database = SQLTutorial;  User Id = sa; Password= NotTrue")
+    Private DBCon As New SqlConnection("Server = LOANLPT; Database = SQLTutorial;  User Id = sa; Password= $flexi14")
     Private DBCmd As SqlCommand
 
     'DB DATA
@@ -17,7 +17,6 @@ Public Class SQLControl
     Public Exception As String
 
     Public Sub New()
-
     End Sub
 
     'Allow Connection String Overrride
@@ -59,7 +58,7 @@ Public Class SQLControl
     End Sub
 
     'Add Params
-    Public Sub AddParam(name As String, value As Object)
+    Public Sub AddParam(name As String, value As String)
         Dim NewParam As New SqlParameter(name, value)
         Params.Add(NewParam)
     End Sub
@@ -70,4 +69,14 @@ Public Class SQLControl
         If Report = True Then MsgBox(Exception, MsgBoxStyle.Critical, "Exception")
         Return True
     End Function
+
+
+    'Error checker function
+    Function CheckError() As Boolean
+       If String.IsNullOrEmpty(Exception) Then
+           Return False
+       End If 
+        MsgBox(Exception, MsgBoxStyle.Critical, "Exception")
+       Return True
+   End Function
 End Class
