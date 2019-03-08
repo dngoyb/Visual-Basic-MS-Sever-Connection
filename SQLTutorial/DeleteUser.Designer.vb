@@ -22,9 +22,51 @@ Partial Class DeleteUser
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container
+        Me.txtFilter = New System.Windows.Forms.TextBox()
+        Me.cmdDelete = New System.Windows.Forms.Button()
+        Me.lbUsers = New System.Windows.Forms.CheckedListBox()
+        Me.SuspendLayout()
+        '
+        'txtFilter
+        '
+        Me.txtFilter.Location = New System.Drawing.Point(96, 57)
+        Me.txtFilter.Name = "txtFilter"
+        Me.txtFilter.Size = New System.Drawing.Size(230, 22)
+        Me.txtFilter.TabIndex = 0
+        '
+        'cmdDelete
+        '
+        Me.cmdDelete.Location = New System.Drawing.Point(96, 351)
+        Me.cmdDelete.Name = "cmdDelete"
+        Me.cmdDelete.Size = New System.Drawing.Size(230, 23)
+        Me.cmdDelete.TabIndex = 1
+        Me.cmdDelete.Text = "Delete"
+        Me.cmdDelete.UseVisualStyleBackColor = True
+        '
+        'lbUsers
+        '
+        Me.lbUsers.FormattingEnabled = True
+        Me.lbUsers.Location = New System.Drawing.Point(96, 85)
+        Me.lbUsers.Name = "lbUsers"
+        Me.lbUsers.Size = New System.Drawing.Size(230, 259)
+        Me.lbUsers.TabIndex = 2
+        '
+        'DeleteUser
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(434, 450)
+        Me.Controls.Add(Me.lbUsers)
+        Me.Controls.Add(Me.cmdDelete)
+        Me.Controls.Add(Me.txtFilter)
+        Me.Name = "DeleteUser"
         Me.Text = "DeleteUser"
+        Me.ResumeLayout(False)
+        Me.PerformLayout()
+
     End Sub
+
+    Friend WithEvents txtFilter As TextBox
+    Friend WithEvents cmdDelete As Button
+    Friend WithEvents lbUsers As CheckedListBox
 End Class

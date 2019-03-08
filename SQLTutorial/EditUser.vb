@@ -2,7 +2,7 @@
 
     Private SQL As New SQLControl
 
-    Private Sub FetchUsers()
+    Public Sub FetchUsers()
         'Refresh User list
         lbUsers.Items.Clear()
 
@@ -44,7 +44,7 @@
 
         If SQL.HasException(True) Then Exit Sub
         MsgBox("User Updated successfully")
-        cmdSubmit.Enabled = False
+        'cmdSubmit.Enabled = False
     End Sub
 
     Private Sub EditUser_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -66,5 +66,6 @@
 
     Private Sub cmdSubmit_Click(sender As Object, e As EventArgs) Handles cmdSubmit.Click
         UpdateUser()
+
     End Sub
 End Class
