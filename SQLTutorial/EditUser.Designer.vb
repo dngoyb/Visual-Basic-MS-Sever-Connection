@@ -26,15 +26,15 @@ Partial Class EditUser
         Me.lbUsers = New System.Windows.Forms.ListBox()
         Me.CheckedListBox1 = New System.Windows.Forms.CheckedListBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.txtID = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.txtUser = New System.Windows.Forms.TextBox()
-        Me.Label2 = New System.Windows.Forms.Label()
+        Me.cmdSubmit = New System.Windows.Forms.Button()
+        Me.cbActive = New System.Windows.Forms.CheckBox()
+        Me.cbAdmin = New System.Windows.Forms.CheckBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.txtPass = New System.Windows.Forms.TextBox()
-        Me.cbAdmin = New System.Windows.Forms.CheckBox()
-        Me.cbActive = New System.Windows.Forms.CheckBox()
-        Me.cmdSubmit = New System.Windows.Forms.Button()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.txtUser = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.txtID = New System.Windows.Forms.TextBox()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -80,39 +80,34 @@ Partial Class EditUser
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Member Details"
         '
-        'txtID
+        'cmdSubmit
         '
-        Me.txtID.Location = New System.Drawing.Point(48, 29)
-        Me.txtID.Name = "txtID"
-        Me.txtID.ReadOnly = True
-        Me.txtID.Size = New System.Drawing.Size(79, 22)
-        Me.txtID.TabIndex = 0
+        Me.cmdSubmit.Location = New System.Drawing.Point(143, 225)
+        Me.cmdSubmit.Name = "cmdSubmit"
+        Me.cmdSubmit.Size = New System.Drawing.Size(75, 23)
+        Me.cmdSubmit.TabIndex = 8
+        Me.cmdSubmit.Text = "Submit"
+        Me.cmdSubmit.UseVisualStyleBackColor = True
         '
-        'Label1
+        'cbActive
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(13, 32)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(29, 17)
-        Me.Label1.TabIndex = 1
-        Me.Label1.Text = "ID: "
+        Me.cbActive.AutoSize = True
+        Me.cbActive.Location = New System.Drawing.Point(143, 187)
+        Me.cbActive.Name = "cbActive"
+        Me.cbActive.Size = New System.Drawing.Size(68, 21)
+        Me.cbActive.TabIndex = 7
+        Me.cbActive.Text = "Active"
+        Me.cbActive.UseVisualStyleBackColor = True
         '
-        'txtUser
+        'cbAdmin
         '
-        Me.txtUser.Location = New System.Drawing.Point(123, 76)
-        Me.txtUser.Name = "txtUser"
-        Me.txtUser.ReadOnly = True
-        Me.txtUser.Size = New System.Drawing.Size(196, 22)
-        Me.txtUser.TabIndex = 2
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(13, 76)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(81, 17)
-        Me.Label2.TabIndex = 3
-        Me.Label2.Text = "Username: "
+        Me.cbAdmin.AutoSize = True
+        Me.cbAdmin.Location = New System.Drawing.Point(143, 160)
+        Me.cbAdmin.Name = "cbAdmin"
+        Me.cbAdmin.Size = New System.Drawing.Size(69, 21)
+        Me.cbAdmin.TabIndex = 6
+        Me.cbAdmin.Text = "Admin"
+        Me.cbAdmin.UseVisualStyleBackColor = True
         '
         'Label3
         '
@@ -130,34 +125,39 @@ Partial Class EditUser
         Me.txtPass.Size = New System.Drawing.Size(196, 22)
         Me.txtPass.TabIndex = 4
         '
-        'cbAdmin
+        'Label2
         '
-        Me.cbAdmin.AutoSize = True
-        Me.cbAdmin.Location = New System.Drawing.Point(143, 160)
-        Me.cbAdmin.Name = "cbAdmin"
-        Me.cbAdmin.Size = New System.Drawing.Size(69, 21)
-        Me.cbAdmin.TabIndex = 6
-        Me.cbAdmin.Text = "Admin"
-        Me.cbAdmin.UseVisualStyleBackColor = True
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(13, 76)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(81, 17)
+        Me.Label2.TabIndex = 3
+        Me.Label2.Text = "Username: "
         '
-        'cbActive
+        'txtUser
         '
-        Me.cbActive.AutoSize = True
-        Me.cbActive.Location = New System.Drawing.Point(143, 187)
-        Me.cbActive.Name = "cbActive"
-        Me.cbActive.Size = New System.Drawing.Size(68, 21)
-        Me.cbActive.TabIndex = 7
-        Me.cbActive.Text = "Active"
-        Me.cbActive.UseVisualStyleBackColor = True
+        Me.txtUser.Location = New System.Drawing.Point(123, 76)
+        Me.txtUser.Name = "txtUser"
+        Me.txtUser.ReadOnly = True
+        Me.txtUser.Size = New System.Drawing.Size(196, 22)
+        Me.txtUser.TabIndex = 2
         '
-        'cmdSubmit
+        'Label1
         '
-        Me.cmdSubmit.Location = New System.Drawing.Point(143, 225)
-        Me.cmdSubmit.Name = "cmdSubmit"
-        Me.cmdSubmit.Size = New System.Drawing.Size(75, 23)
-        Me.cmdSubmit.TabIndex = 8
-        Me.cmdSubmit.Text = "Submit"
-        Me.cmdSubmit.UseVisualStyleBackColor = True
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(13, 32)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(29, 17)
+        Me.Label1.TabIndex = 1
+        Me.Label1.Text = "ID: "
+        '
+        'txtID
+        '
+        Me.txtID.Location = New System.Drawing.Point(48, 29)
+        Me.txtID.Name = "txtID"
+        Me.txtID.ReadOnly = True
+        Me.txtID.Size = New System.Drawing.Size(79, 22)
+        Me.txtID.TabIndex = 0
         '
         'EditUser
         '
